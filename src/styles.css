@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.widthbtn {
+    width: 150px;
+}
+.widthcbtn {
+    width: 90px;
+}
+
+.marginbtn {
+    margin: 15px;
+}
+.margintopbtn {
+    margin-top: 20px;
+}
+.widthbtn1{
+    width: auto;
+}

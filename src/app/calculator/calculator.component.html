@@ -1,0 +1,54 @@
+<div class="container" [ngStyle]="{'background-color':color}">
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-success  widthcbtn " (click)="colorv()">Vert</button>
+            <button type="button" class="btn btn-danger marginbtn widthcbtn" (click)="colorr()">Rouge</button>
+            <button type="button" class="btn btn-secondary marginbtn widthcbtn" (click)="colorb()">Blanc</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="col-md-10" [value]="inputdata">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-light borderbtn "(click)="getOp('+')" >+</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" (click)="getOp('-')">-</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" (click)="getOp('*')">*</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" (click)="getOp('/')">/</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-light borderbtn " style="border:1px solid" (click)="getNbr('7')">7</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid" (click)="getNbr('8')">8</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid" (click)="getNbr('9')">9</button>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-light borderbtn " style="border:1px solid" (click)="getNbr('4')">4</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid" (click)="getNbr('5')">5</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid" (click)="getNbr('6')">6</button>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-light borderbtn " style="border:1px solid" (click)="getNbr('1')">1</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid"(click)="getNbr('2')">2</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid"(click)="getNbr('3')">3</button>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-light borderbtn " style="border:1px solid" (click)="getNbr('0')">0</button>
+            <button type="button" class="btn btn-light marginbtnc borderbtn" style="border:1px solid" (click)="getVrg('.')">.</button>
+            <button type="button" class="btn btn-danger marginbtnc borderbtn" style="border:1px solid"(click)="reset()">AC</button>
+            <button type="button" class="btn btn-info marginbtnc borderbtn" style="border:1px solid" (click)="Result()">=</button>
+        </div>
+    </div>
+</div>

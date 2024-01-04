@@ -1,0 +1,42 @@
+<div class="container">
+
+    <!--<div class="card">
+        <div class="card-body marginbtn margintopbtn">
+            <div>
+                <div>
+                    <label class="input-group mb-3"> Name:</label>
+                </div>
+                <div>
+                    <label class="input-group mb-3"> Email:</label>
+                </div>
+                <div>
+                    <label class="input-group mb-3"> Tel:</label>
+                </div>
+            </div>
+            <div>
+
+                <input type="text" [(ngModel)]="ajoutFormation.nomf">
+
+                <button type="button" class="btn  btn-success widthbtn1 " (click)="ajouter()">Ajouter Formation</button>
+
+                <ul *ngFor="let item of listFormations">
+                    <li>{{item.nomf}}</li>
+                </ul>
+
+            </div>
+
+        </div>-->
+
+
+    <div>
+       <!-- <form >
+            <input  name="nomf" type="text"  >
+
+            <button  type="submit"  class="btn  btn-success widthbtn1 ">Submit</button>
+        </form>-->
+        <ul *ngFor="let item of listFormation" >
+            <li>{{item.nomf}}</li>
+        </ul>
+
+    </div>
+</div>

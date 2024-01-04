@@ -1,0 +1,53 @@
+<!--travaux 1 form data binding -->
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <label for="">My name is: {{name}}</label><br>
+            <label for=""> My surname:{{username}}</label><br>
+            <label for="">@mail:{{getEmail()}}</label><br>
+
+            <input #inputname type="text" placeholder="Name" [(ngModel)]="inputname.value"><br>
+            <input #inputprenom type="text" placeholder="Prenom" [(ngModel)]="inputprenom.value"><br>
+            <input #inputmail type="text" placeholder="@gmail" [(ngModel)]="inputmail.value"><br>
+            <button [disabled]="!inputname.value||!inputprenom.value||!inputmail.value"
+                class="btn  btn-primary widthbtn marginbtn margiright "
+                (click)="changer(inputname.value,inputprenom.value,inputmail.value)">Changer</button>
+            <button (click)="reset()" class="btn  btn-success widthbtn marginbtn ">Reset</button>
+
+
+
+
+
+
+
+
+
+            <!-- HTML vers TS
+        /*<button (click)="getName()" class="btn btn-primary widthbtn">getName</button><br>-->
+
+        </div>
+    </div>
+
+</div>
+<!--travaux 2 input -->
+
+<div class="container">
+
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <label for=""> May name is :{{name1}}</label><br>
+                <input type="text" placeholder="Prenom" [(ngModel)]="username1">
+                <label for="">Prenom:{{username1}}</label>
+            </div>
+            <div>
+                <button [disabled]="counter==0" type="button" (click)="decrementer()">-</button>
+                <label for="">counter:{{counter}}</label>
+                <button [disabled]="counter==10" type="button" (click)="incrementer()">+</button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <button type="button" class="btn btn-link" (click)="goAbout()">Go to About</button>

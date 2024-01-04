@@ -1,0 +1,21 @@
+<div class="container"><br>
+    <p>Table des Produits</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Produits</th>
+                <th>Prix</th>
+                <th>Reference</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Products">
+                <td>{{item.nom}}</td>
+                <td>{{item.prix}}</td>
+                <td>{{item.reference}}</td>
+                <td><button class="btn btn-danger" type="button" (click)="deleteProdect(item)"><i class="bi bi-trash3-fill">Delete</i></button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
